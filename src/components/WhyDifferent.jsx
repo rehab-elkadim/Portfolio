@@ -33,7 +33,7 @@ export default function WhyDifferent() {
   return (
     <section className="layer-section border-y border-ink/5" aria-labelledby="layers-heading">
       <div className="page-shell section-space">
-        <Reveal><p className="eyebrow">The difference is in the details</p><h2 id="layers-heading" className="section-heading mt-4">Thoughtful on the surface.<br />Solid underneath.</h2></Reveal>
+        <Reveal><p className="eyebrow">Not just a good looking site</p><h2 id="layers-heading" className="section-heading mt-4">Thoughtful on the surface.<br />Solid underneath.</h2></Reveal>
         <div ref={stage} className={`layer-stage ${selected !== null ? "has-selection" : ""}`} onKeyDown={(event) => { if (event.key === "Escape") setSelected(null); }}>
           <div className="layer-intro" aria-hidden={selected !== null}><p className="font-heading text-2xl font-medium tracking-tight">I don’t think in pages. I think in outcomes.</p><p className="mt-4 max-w-xs leading-relaxed text-ink-soft">A website can be beautiful and still fail its job. I think beyond the interface — about the user, the business goal, the technical decisions, and what happens after launch.</p></div>
           <div className="layer-floor" aria-hidden="true" />

@@ -32,10 +32,10 @@ export default function ProjectShowcase() {
   }, [index, paused, compact, overview]);
 
   return (
-    <section id="work" className="page-shell section-space" aria-label="Selected work">
+    <section id="work" className="page-shell section-space" aria-label="Work Experience Top Picks">
       <Reveal>
         <div className="flex flex-wrap items-end justify-between gap-6">
-          <div><p className="eyebrow">Selected work / {String(projects.length).padStart(2, "0")}</p><h2 className="section-heading mt-4">Don’t take my word for it,<br /><span className="text-[#3976b8]">See what I build.</span></h2></div>
+          <div><p className="eyebrow">Work Experience Top Picks / {String(projects.length).padStart(2, "0")}</p><h2 className="section-heading mt-4">Don’t take my word for it,<br /><span className="text-[#3976b8]">See what I build.</span></h2></div>
         </div>
       </Reveal>
       <Reveal className="mt-6 sm:mt-8">

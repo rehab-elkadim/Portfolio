@@ -21,7 +21,7 @@
   .project-more { min-height:44px; display:inline-flex; align-items:center; }
   .process-layout { gap:28px; grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
   .process-choice-button { min-height:60px; }
-  .contact-footer .contact-invitation { padding:56px 32px 24px; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); gap:32px; }
+  .contact-footer .contact-invitation { padding:44px 32px 18px; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); gap:32px; }
   .contact-copy h2 { font-size:clamp(40px,5vw,56px); }
   .contact-footer .contact-booking { padding:12px 20px 12px 0; }
   .contact-footer .contact-book-button { max-width:none; }
@@ -103,7 +103,7 @@
   .reel-carousel:has(.has-playing) .shorts-nav { top:calc(min(72vw,300px) * .889); }
   .reel-track.has-playing { height:calc(min(72vw,300px) * 1.778 + 40px); }
   .reel-track.has-playing .reel-orbit:not(:has(.is-playing)) { opacity:0; pointer-events:none; }
-  .contact-footer .contact-invitation { padding:40px var(--phone-gutter) 20px; grid-template-columns:minmax(0,1fr); gap:24px; }
+  .contact-footer .contact-invitation { padding:26px var(--phone-gutter) 14px; grid-template-columns:minmax(0,1fr); gap:24px; }
   .contact-copy h2 { font-size:clamp(36px,10vw,46px); margin-top:18px; }
   .contact-copy .eyebrow { font-size:10px; }
   .contact-description { font-size:16px; margin-top:18px; }

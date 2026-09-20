@@ -16,7 +16,7 @@
 
 @layer components {
 :root { --ease-out: cubic-bezier(0.22, 1, 0.36, 1); }
-html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+html { overflow-x: hidden; scroll-behavior: smooth; scroll-padding-top: 100px; }
 body { margin: 0; overflow-x: hidden; font-family: var(--font-body); color: var(--color-ink); background: #fff; -webkit-font-smoothing: antialiased; }
 ::selection { background: #42d39266; color: #202020; }
 button, a { -webkit-tap-highlight-color: transparent; }
@@ -377,7 +377,7 @@ button { cursor: pointer; }
      decisive moment rather than matching body-copy weight, and the panel
      itself grows to match (more vertical breathing room, not just bigger
      type sitting in the same box). */
-  .contact-invitation { padding-block: 88px; gap: 64px; }
+  .contact-invitation { padding-block: 75px; gap: 64px; }
   .contact-copy .eyebrow { font-size: 12.5px; }
   .contact-copy h2 { font-size: clamp(37px, 4.95vw, 62px); }
   .contact-description { font-size: 17px; }
@@ -392,6 +392,21 @@ button { cursor: pointer; }
     .contact-copy h2 { font-size: 41px; }
     .contact-booking > p { font-size: 19px; }
   }
+}
+
+@layer components {
+  /* Back to the original black-and-white footer theme — colors only, the
+     current layout/geometry/spacing above is untouched. */
+  .contact-footer { background: var(--color-ink); border-top-color: #ffffff14; }
+  .contact-footer .contact-invitation { background: var(--color-ink); color: #fff; border-color: #ffffff12; }
+  .contact-footer .contact-copy .eyebrow { color: #ffffff80; }
+  .contact-footer .contact-copy h2 span { color: var(--color-green); }
+  .contact-footer .contact-description { color: #ffffff99; }
+  .contact-footer .contact-booking { background: transparent; border-color: transparent; border-right-color: #ffffff26; }
+  .contact-footer .contact-booking > p { color: #ffffffe0; }
+  .contact-footer .contact-book-button { background: var(--color-green); color: var(--color-ink); border-color: transparent; }
+  .contact-footer .contact-book-button:hover { background: #8ae8b9; }
+  .contact-footer .contact-copyright { border-color: #ffffff18; color: #ffffff80; }
 }
 
 @layer components {

@@ -58,7 +58,7 @@ export default function Hero() {
             <span className="hero-line" style={{ animationDelay: "200ms" }}><span className="relative inline-block whitespace-nowrap">Goals.<span className="hero-underline" /></span></span>
           </h1>
           <p className="hero-enter mt-[23px] max-w-[440px] text-[1.2375rem] leading-relaxed text-ink-soft" style={{ animationDelay: "300ms" }}>
-            I’m Rehab, a full-stack web developer building fast, polished, production-ready websites and web applications — from conversion-focused business websites to complete SaaS products.
+            I’m Rehab, I build beautiful websites that convert.
           </p>
           <div className="hero-enter mt-7 flex flex-wrap items-center gap-x-7 gap-y-4" style={{ animationDelay: "400ms" }}>
             <a href="#work" className="hero-work-button">Explore my work <ArrowDown className="button-arrow h-4 w-4" /></a>
