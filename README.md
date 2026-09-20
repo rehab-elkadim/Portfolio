@@ -2,7 +2,7 @@
 
 Personal portfolio of Rehab Elkadim, a full-stack web developer: a single-page React site that presents selected client projects, working approach, and coding content, and lets visitors book an intro call.
 
-[Live site](https://portfolio-web-production-a01d.up.railway.app)
+[Live site](https://rehabelkadim.com)
 
 ## Overview
 
@@ -152,7 +152,7 @@ To enable live previews with synchronized scrolling for a project, follow [docs/
 
 The output of `npm run build` is a static site in `dist/`.
 
-The site is hosted on [Railway](https://railway.com) at https://portfolio-web-production-a01d.up.railway.app. The Railway service is connected to this repository's `main` branch and redeploys on every push. There is no Railway config file in the repository; Railpack detects the project as a Vite static site and runs:
+The site is hosted on [Railway](https://railway.com) and served at https://rehabelkadim.com (DNS is managed in Cloudflare, with a DNS-only CNAME to the Railway service and a `_railway-verify` TXT record for ownership). The Railway service is connected to this repository's `main` branch and redeploys on every push. There is no Railway config file in the repository; Railpack detects the project as a Vite static site and runs:
 
 1. `npm install`
 2. `npm run build`
