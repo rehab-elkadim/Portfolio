@@ -2,6 +2,8 @@
 
 Personal portfolio of Rehab Elkadim, a full-stack web developer: a single-page React site that presents selected client projects, working approach, and coding content, and lets visitors book an intro call.
 
+[Live site](https://portfolio-web-production-a01d.up.railway.app)
+
 ## Overview
 
 The site is a static single-page application with no backend of its own. It is built to let a visitor do three things quickly:
@@ -148,7 +150,15 @@ To enable live previews with synchronized scrolling for a project, follow [docs/
 
 ## Deployment
 
-The output of `npm run build` is a static site in `dist/`. No hosting configuration (for example `vercel.json`, `netlify.toml`, or a CI workflow) is included, so the deployment target is not documented here. Any static host that serves `dist/` will work.
+The output of `npm run build` is a static site in `dist/`.
+
+The site is hosted on [Railway](https://railway.com) at https://portfolio-web-production-a01d.up.railway.app. The Railway service is connected to this repository's `main` branch and redeploys on every push. There is no Railway config file in the repository; Railpack detects the project as a Vite static site and runs:
+
+1. `npm install`
+2. `npm run build`
+3. Serves `dist/` with Caddy
+
+No environment variables or extra service settings are required. Any other static host that serves `dist/` will also work. The repository has no CI workflow.
 
 ## Known Limitations
 
