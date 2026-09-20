@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { projects } from "../data/projects";
-import { ChevronIcon } from "./Decorations";
+import { ChevronIcon, StarBurst } from "./Decorations";
 import BrowserFrame from "./BrowserFrame";
 import Reveal from "./Reveal";
 import ProjectPreview from "./ProjectPreview";
@@ -35,7 +35,7 @@ export default function ProjectShowcase() {
     <section id="work" className="page-shell section-space" aria-label="Work Experience Top Picks">
       <Reveal>
         <div className="flex flex-wrap items-end justify-between gap-6">
-          <div><p className="eyebrow">Work Experience Top Picks / {String(projects.length).padStart(2, "0")}</p><h2 className="section-heading mt-4">Don’t take my word for it,<br /><span className="text-[#3976b8]">See what I build.</span></h2></div>
+          <div><p className="eyebrow">Work Experience Top Picks</p><h2 className="section-heading mt-4">Don’t take my word for it,<br /><span className="text-[#3976b8]">See what I build.</span></h2></div>
         </div>
       </Reveal>
       <Reveal className="mt-6 sm:mt-8">
@@ -61,7 +61,11 @@ export default function ProjectShowcase() {
                 <p className="eyebrow text-[#3976b8]">{project.category}</p>
                 <div className="project-title-row">
                 <h3 className="font-heading text-3xl font-semibold tracking-tight sm:text-[34px]">{project.demoUrl ? <a className="project-title-link" href={project.demoUrl} target="_blank" rel="noreferrer">{project.name}</a> : project.name}</h3>
-                <button id={"explore-" + project.id} type="button" className="text-link project-more" aria-expanded={overview?.id === project.id} aria-controls={"preview-" + project.id} onClick={() => setOverview(project)}>Explore project <span aria-hidden="true">↗</span></button>
+                <span className="project-more-wrap">
+                  <StarBurst color="#5A98DE" className="spark spark-left" />
+                  <button id={"explore-" + project.id} type="button" className="text-link project-more" aria-expanded={overview?.id === project.id} aria-controls={"preview-" + project.id} onClick={() => setOverview(project)}>Explore project <span aria-hidden="true">↗</span></button>
+                  <StarBurst className="spark spark-right" />
+                </span>
                 </div>
                 <p className="mt-4 leading-relaxed text-ink-soft">{project.summary}</p>
                 {project.description && <p className="mt-3 text-sm leading-relaxed text-ink-soft">{project.description}</p>}

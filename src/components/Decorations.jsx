@@ -2,7 +2,7 @@
 // Reproduced as inline SVG (rather than rasterized) so they stay crisp at
 // any size and can inherit color via currentColor where useful.
 
-export function StarBurst({ className = "" }) {
+export function StarBurst({ className = "", color = "#FF4AD8" }) {
   return (
     <svg
       viewBox="0 0 160 160"
@@ -12,7 +12,7 @@ export function StarBurst({ className = "" }) {
       aria-hidden="true"
     >
       <path
-        fill="#FF4AD8"
+        fill={color}
         d="M78 2c3 27 8 45 15 54 10 5 27 9 51 12-24 4-41 9-51 15-7 9-12 26-15 53-3-27-8-44-16-53-9-6-26-11-50-15 24-3 41-7 50-12 8-9 13-27 16-54Z"
       />
     </svg>

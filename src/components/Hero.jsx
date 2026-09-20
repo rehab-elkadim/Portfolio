@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import portrait from "../assets/images/rehab-portrait.jpg";
-import { StarBurst, Triangle, Blob, ArrowDown } from "./Decorations";
+import { StarBurst, Triangle, Blob } from "./Decorations";
 
 
 export default function Hero() {
@@ -61,7 +61,6 @@ export default function Hero() {
             I’m Rehab, I build beautiful websites that convert.
           </p>
           <div className="hero-enter mt-7 flex flex-wrap items-center gap-x-7 gap-y-4" style={{ animationDelay: "400ms" }}>
-            <a href="#work" className="hero-work-button">Explore my work <ArrowDown className="button-arrow h-4 w-4" /></a>
             <a href="https://github.com/rehab-elkadim" className="text-link text-sm font-medium">GitHub <span aria-hidden="true">↗</span></a>
           </div>
           <p className="mt-5 text-xs leading-relaxed text-ink-soft">React · TypeScript · Node.js · Express · MongoDB</p>
