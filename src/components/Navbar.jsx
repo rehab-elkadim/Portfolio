@@ -7,7 +7,7 @@ export default function Navbar() {
           <a href="#work" className="text-link hidden text-sm md:inline-flex">Work</a>
           <a href="#process" className="text-link hidden text-sm md:inline-flex">Approach</a>
           <a href="#content" className="text-link hidden text-sm md:inline-flex">Beyond the code</a>
-          <a href="https://wa.me/201275949633" target="_blank" rel="noreferrer" className="header-contact text-link min-h-8 rounded-full border border-ink/50 px-3 text-sm font-medium">Get in touch</a>
+          <a href="https://wa.me/971505620380" target="_blank" rel="noreferrer" className="header-contact text-link min-h-8 rounded-full border border-ink/50 px-3 text-sm font-medium">Get in touch</a>
         </div>
       </nav>
     </header>

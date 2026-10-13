@@ -25,7 +25,7 @@ function Device({ device, project, register, onLoad }) {
           style={{ width: device.width, height: device.height, transform: "scale(" + scale + ")" }} />
           : <div className="preview-unavailable">
             {device.id === "laptop" && <img src={project.image} alt={project.imageAlt} />}
-            <span>{device.id === "laptop" ? "Project screenshot" : device.label + " preview"}<small>{project.previewUnavailable ? "Live site temporarily unavailable" : "Live preview not connected yet"}</small></span>
+            <span>{device.id === "laptop" ? "Project screenshot" : device.label + " preview"}<small>{project.previewUnavailable ? "Live site no longer online" : "Live preview not connected yet"}</small></span>
           </div>}
       </div>
     </div>
@@ -90,7 +90,7 @@ export default function ProjectPreview({ project, onClose }) {
         register={(node) => { frames.current[device.id] = node; }} onLoad={() => initialise(device.id)} />)}
     </div>
     <div className="preview-status">
-      <p>{!previewUrl ? "Live device previews will be available here soon." : connected ? "Explore the live site in any screen." : "Explore each screen independently. If a preview stays blank, use Open live site."}</p>
+      <p>{!previewUrl ? (project.previewUnavailable ? "This site is no longer online, so only the project screenshot is shown." : "Live device previews will be available here soon.") : connected ? "Explore the live site in any screen." : "Explore each screen independently. If a preview stays blank, use Open live site."}</p>
       {connected && <button type="button" className="text-link" aria-pressed={sync} onClick={() => setSync((value) => !value)}>Scroll together: {sync ? "On" : "Off"}</button>}
     </div>
   </section>;
